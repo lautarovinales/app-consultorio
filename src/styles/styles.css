@@ -43,8 +43,8 @@ footer{
 }
 
 .menu-mobile {
-    @apply absolute left-0 w-full bg-white p-5 flex flex-col items-start gap-5 transition-transform transform z-50 shadow-md rounded;
-    top: 120px;
+    @apply fixed left-0 w-full bg-white p-2 flex flex-col items-start gap-5 transition-transform transform z-50 shadow-md;
+    top: 85px;
     /* Ajusta la posición para que aparezca debajo del nav */
     transform: translateX(-150%);
     /* Se esconde fuera de la vista */
@@ -84,7 +84,7 @@ footer{
 }
 
 .main {
-    @apply flex flex-col px-40 py-10;
+    @apply flex flex-col px-40 py-10 ;
 }
 
 .x {
@@ -92,8 +92,16 @@ footer{
 }
 
 @media (max-width: 860px) {
+    .nav-flex {
+        @apply fixed w-full z-50 bg-white;
+    }
+
+    .btn-blue, .btn-gray {
+        @apply  text-lg;
+    }
+
     .main {
-        @apply px-0 py-0;
+        @apply pt-20 px-0 py-0;
     }
 
     .cont-home {

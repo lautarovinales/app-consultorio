@@ -5,7 +5,10 @@ const Menu = () => {
   return (
     <div>
         <footer>
-            <p>hola</p>
+            <div className='footer-top'></div>
+            <div className='footer-bottom'>
+              <p>2024 todos los derechos reservados a lautaro viñales</p>
+            </div>
         </footer>
     </div>
   );

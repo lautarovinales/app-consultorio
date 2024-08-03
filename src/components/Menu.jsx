@@ -11,7 +11,7 @@ const Menu = () => {
   return (
     <div>
       <nav className='nav-flex'>
-        <img className='w-20 h-20' src="/images/logo.png" alt="logo" />
+        <img className='w-12 h-12' src="/images/logo.png" alt="logo" />
         
         {/* Menú tradicional */}
         <ul className='hidden md:flex gap-5'>
